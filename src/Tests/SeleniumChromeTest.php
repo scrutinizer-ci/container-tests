@@ -1,17 +1,17 @@
 <?php
 
-class SeleniumChromeTest extends PHPUnit_Extensions_Selenium2TestCase
+class SeleniumChromeTest extends \PHPUnit\Extensions\Selenium2TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->setBrowser('chrome');
-        $this->setBrowserUrl('http://google.com/');
+        $this->setBrowserUrl('https://google.com/');
     }
 
     public function testTitle()
     {
-        $this->url('http://www.google.com/');
-        $this->assertContains('Google', $this->title());
+        $this->url('https://www.google.com/');
+        $this->assertStringContainsString('Google', $this->title());
     }
 
 }

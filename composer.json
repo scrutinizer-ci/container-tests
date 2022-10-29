@@ -2,8 +2,8 @@
     "name": "scrutinizer/container-tests",
     "type": "project",
     "require": {
-        "phpunit/phpunit": "^4.8",
-        "phpunit/phpunit-selenium": ">=1.2"
+        "phpunit/phpunit": "^9.5.26",
+        "phpunit/phpunit-selenium": "^9.0.1"
     },
     "authors": [
         {
